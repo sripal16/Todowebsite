@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div id="header" class="header">
+        <div>
+            <h1 id="header-title" class="header-title">TODO APP</h1>
+        </div>
+        <div>
+            <input type="text" id="filter" class="filter" placeholder="search todo's">
+        </div>
+    </div>
+    <div class="container">
+        <!-- <div class="info">
+            <p>Type your task and click submit to add a todo</p>
+            <p>Click delete button next to a todo to delete a todo</p>
+            <p>Use search bar to find todos</p>
+        </div> -->
+        <h2 class="title">Add Todos</h2>
+        <form id="addForm" autocomplete="off">
+            <input type="text" id="todo" class="todo-input">
+            <button type="submit" class="submit-button">Submit</button>
+        </form>
+        <h2 class="title">Todo's</h2>
+        <ul id="todos" class="todo-list">
+
+            <!-- comment the below li's after completing the project
+            they are added just to get accurate ui and they are helpful in styling-->
+
+            <!-- <i class="fa fa-pencil-square-o" aria-hidden="true"> 
+            <i class="fa fa-trash"></i>  -->
+            <li class="todo-item">
+                Reference of a tod how it looks
+                <button class="edit-button edit">Edit</i>
+                <button class="delete-button delete">Delete</button>
+                </button>
+            </li>
+            <!-- <li class="todo-item">
+                Todo 2
+                <button class="delete-button delete"><i class="fa fa-trash"></i> Delete</button>
+            </li>
+            <li class="todo-item">
+                Todo 3
+                <button class="delete-button delete"><i class="fa fa-trash"></i> Delete</button>
+            </li>
+            <li class="todo-item">
+                Todo 4
+                <button class="delete-button delete"><i class="fa fa-trash"></i> Delete</button>
+            </li> -->
+        </ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
